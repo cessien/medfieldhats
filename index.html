@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medfield Hats | Custom Hats, Beanies & Headbands</title>
+  <meta name="description" content="Unstructured, 100% cotton custom hats, beanies, headbands and bows for Medfield. DM or order online.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Klaviyo onsite JS: replace PUBLIC_KEY in config.js, then it is loaded by script.js -->
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#"><span class="m">M</span> Medfield Hats</a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#custom">Custom orders</a>
+      <a href="#join">Join the list</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Unstructured · 100% cotton</p>
+    <h1>Hats for the<br>Medfield crew.</h1>
+    <p class="sub">Dad hats, beanies, headbands and bows with the big blue M. Made in small batches, one town at a time.</p>
+    <a class="btn" href="#shop">Shop the collection</a>
+    <a class="btn ghost" href="#custom">Request a custom order</a>
+  </section>
+
+  <section id="shop" class="wrap">
+    <h2>The collection</h2>
+    <div class="grid" id="products"></div>
+  </section>
+
+  <section id="custom" class="wrap band">
+    <h2>Custom orders</h2>
+    <p>Class years, team names, last names, bachelorette weekends. Tell us what you need and we'll send a mockup.</p>
+    <form id="custom-form" class="form" novalidate>
+      <input name="first_name" placeholder="First name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <select name="item">
+        <option>Hat</option><option>Beanie</option><option>Headband</option><option>Hair bow</option><option>Tote</option>
+      </select>
+      <textarea name="details" rows="3" placeholder="What should it say? Colors? Quantity?"></textarea>
+      <button class="btn" type="submit">Send request</button>
+      <p class="msg" role="status"></p>
+    </form>
+  </section>
+
+  <section id="join" class="wrap center">
+    <h2>New drops first</h2>
+    <p>Join the list for seasonal releases and restocks. No spam.</p>
+    <form id="signup-form" class="form inline" novalidate>
+      <input name="email" type="email" placeholder="you@email.com" required>
+      <button class="btn" type="submit">Sign me up</button>
+      <p class="msg" role="status"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="yr"></span> Medfield Hats · <a href="https://instagram.com/medfield_hats">@medfield_hats</a></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
